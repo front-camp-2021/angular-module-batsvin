@@ -177,14 +177,13 @@
             <img src="img/Path (2).svg" alt=""></button>
       </div>
       <div class="main-cards__search">
-         <input type="text" placeholder="Search..">
+         <input type="text" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search..">
       </div>
       <section class="main-cards__container">
-
-         <div class="card-background" *ngFor="let item of productList">
+         <div class="card-background" *ngFor="let item of productList | filter:searchKey:'title'">
             <section class="card">
                <div class="card__img">
-                  <div class="card__img-padding"><img src="{{item.images[0]}}" alt="iphone-x">
+                  <div class="card__img-padding"><img src="{{item.images[0]}}" alt="{{item.title}}">
                   </div>
                </div>
                <header class="card__header">
@@ -194,7 +193,7 @@
                            d="M7.6981 1L9.69702 4.94953L14.1671 5.58675L10.9326 8.65931L11.6959 13L7.6981 10.9495L3.70025 13L4.4636 8.65931L1.2291 5.58675L5.69918 4.94953L7.6981 1V1Z"
                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                      </svg></button>
-                  <div class="card__price">{{item.price}}$</div>
+                  <div class="card__price">{{item.price}}</div>
                </header>
                <article class="card__text">
                   <h3>{{item.title}}</h3>
