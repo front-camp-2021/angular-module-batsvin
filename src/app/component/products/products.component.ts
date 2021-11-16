@@ -60,5 +60,16 @@ export class ProductsComponent implements OnInit {
       return false;
     })
   }
-
+  multiRange(small: number, big: number) {
+    this.filterCategory = this.productList.filter((a: any) => {
+      if (a.price >= small && a.price <= big) {
+        return true;
+      }
+      return false;
+    })
+  }
+  clearFilter() {
+    this.productList
+    console.log(this.productList)
+  }
 }
