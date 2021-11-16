@@ -9,6 +9,8 @@ import { ProductsComponent } from './component/products/products.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterPipe } from './shared/filter.pipe';
+import { AsideComponent } from './component/aside/aside.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { FilterPipe } from './shared/filter.pipe';
     HeaderComponent,
     CartComponent,
     ProductsComponent,
-    FilterPipe
+    FilterPipe,
+    AsideComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { FilterPipe } from './shared/filter.pipe';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
 
   ],
   providers: [],
