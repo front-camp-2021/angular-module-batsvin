@@ -69,7 +69,7 @@ export class ProductsComponent implements OnInit {
     })
   }
   clearFilter() {
-    this.productList
+    this.filterCategory = this.productList
     console.log(this.productList)
   }
 }
