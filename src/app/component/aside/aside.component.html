@@ -1,0 +1,188 @@
+<aside class="aside">
+   <div class="aside__header">
+      <h5>Filter</h5>
+      <button class="aside__hower">
+         << </button>
+   </div>
+   <div class="aside__characteristic">
+      <h4>Multi Range</h4>
+      <form action="#">
+         <input type="radio" id="radioButton1">
+         <label for="radioButton1">$10</label> <br>
+         <input type="radio" id="radioButton2">
+         <label for="radioButton2">$10-$100</label><br>
+         <input type="radio" id="radioButton3">
+         <label for="radioButton3">$100-$500</label><br>
+         <input type="radio" id="radioButton4">
+         <label for="radioButton4">$500</label><br>
+         <input type="radio" id="radioButton5" checked />
+         <label for="radioButton5">All</label>
+      </form>
+      <hr>
+      <h4>Category</h4>
+      <div class="aside__category" *ngFor="let item of categoriesList">
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="{{item}}" name="{{item}}">
+               <label for="{{item}}">
+                  <span>{{item}}</span>
+               </label>
+            </div><span>1920</span>
+         </div><br>
+         <!-- <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="scales1" name="scales1" checked>
+               <label for="scales1">
+                  <span>Cell Phones</span>
+               </label>
+            </div><span>1920</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="2" name="2">
+               <label for="2">
+                  <span>Computers & Tablets</span>
+               </label>
+            </div><span>1820</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="3" name="3">
+               <label for="3">
+                  <span> Cell Phone Accessories</span>
+               </label>
+            </div><span>462</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="4" name="4">
+               <label for="4">
+                  <span>Appliances </span>
+               </label>
+            </div><span>6556 </span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="5" name="5">
+               <label for="5">
+                  <span>Audio </span>
+               </label>
+            </div><span>120 </span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="6" name="6">
+               <label for="6">
+                  <span>iPhone Accessories </span>
+               </label>
+            </div><span>353</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="7" name="7">
+               <label for="7">
+                  <span>Cameras & Camcorders</span>
+               </label>
+            </div><span>45</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="8" name="8">
+               <label for="8">
+                  <span>iPhone Cases & Clips</span>
+               </label>
+            </div><span>456</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="9" name="9">
+               <label for="9">
+                  <span>TV & Home Theater</span>
+               </label>
+            </div><span>55</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="10" name="10">
+               <label for="10">
+                  <span>Small Kitchen Appliances</span>
+               </label>
+            </div><span>10</span>
+         </div><br>
+         -->
+      </div>
+      <hr>
+      <h4>Brand</h4>
+      <div class="aside__category" *ngFor="let item of brandsList">
+         <div class="aside__category-element">
+            <div class="aside__category-label">
+               <input type="checkbox" id="{{item}}" name="{{item}}" (click)="filter(item)">
+               <label for="{{item}}">
+                  <span>{{item}}</span>
+               </label>
+            </div><span>220</span>
+         </div><br>
+         <!--<div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="scales11" name="scales11" checked>
+               <label for="scales11">
+                  <span>Insigni </span>
+               </label>
+            </div><span>220</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="12" name="12">
+               <label for="12">
+                  <span>Samsung </span>
+               </label>
+            </div><span>120</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="13" name="13">
+               <label for="13">
+                  <span>Apple</span>
+               </label>
+            </div><span>320</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="14" name="14">
+               <label for="14">
+                  <span>HP</span>
+               </label>
+            </div><span>32</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="15" name="15">
+               <label for="15">
+                  <span>Sony </span>
+               </label>
+            </div><span>520</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="16" name="16">
+               <label for="16">
+                  <span>Metra </span>
+               </label>
+            </div><span>55</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="17" name="17">
+               <label for="17">
+                  <span>Dyne</span>
+               </label>
+            </div><span>120</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="18" name="18">
+               <label for="18">
+                  <span>LG</span>
+               </label>
+            </div><span>98</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="19" name="19">
+               <label for="19">
+                  <span>Canon </span>
+               </label>
+            </div><span>99</span>
+         </div><br>
+         <div class="aside__category-element">
+            <div class="aside__category-label"><input type="checkbox" id="20" name="20">
+               <label for="10">
+                  <span>Speck</span>
+               </label>
+            </div><span>575</span>
+         </div><br>
+      -->
+      </div>
+   </div>
+   <button class="aside__clear"><span>CLEAR ALL FILTERS</span> </button>
+</aside>

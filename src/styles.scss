@@ -1,1 +1,473 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+   background-color: #f9f9f9;
+   font-family: Montserrat;
+   height: 100%;
+   font-style: normal;
+}
+body header {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+}
+hr {
+   border: 1px solid #d6d6d6;
+   margin-top: 20px;
+   margin-bottom: 33px;
+}
+input[type="radio"] {
+   margin-right: 11px;
+   margin-bottom: 18px;
+}
+input[type="radio"]:after {
+   width: 15px;
+   height: 15px;
+   border-radius: 15px;
+   top: -2px;
+   left: -1px;
+   position: relative;
+   background-color: #fff;
+   content: "";
+   display: inline-block;
+   visibility: visible;
+   border: 1px solid #979797;
+}
+input[type="radio"]:checked:after {
+   width: 15px;
+   height: 15px;
+   border-radius: 20px;
+   top: -2px;
+   left: -1px;
+   position: relative;
+   background-color: #7e72f2;
+   content: "";
+   display: inline-block;
+   visibility: visible;
+   border: 1px solid #7e72f2;
+}
+input[type="checkbox"] {
+   margin-right: 11px;
+   margin-bottom: 0px;
+}
+input[type="checkbox"]:after {
+   width: 19px;
+   height: 17px;
+   border-radius: 3px;
+   top: -2px;
+   left: -1px;
+   position: relative;
+   background-color: #fff;
+   content: "";
+   display: inline-block;
+   visibility: visible;
+   border: 1px solid #979797;
+}
+input[type="checkbox"]:checked:after {
+   width: 19px;
+   height: 17px;
+   top: -2px;
+   left: -1px;
+   position: relative;
+   background-color: #7e72f2;
+   content: "";
+   display: inline-block;
+   visibility: visible;
+   border: 1px solid #7e72f2;
+}
+main {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: stretch;
+   -ms-flex-align: stretch;
+   align-items: stretch;
+}
+button {
+   background: #7e72f2;
+   color: #fff;
+   border: 0;
+}
+.container {
+   margin-left: auto;
+   margin-right: auto;
+}
+.aside {
+   width: 30%;
+   padding-right: 30px;
+}
+.aside__hower {
+   background: #fff;
+   -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+   border: 0;
+   border-radius: 8px;
+   width: 47px;
+   height: 40px;
+   color: #000;
+}
+.aside__clear {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   background: #7e72f2;
+   border: 0;
+   -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+   border-radius: 8px;
+   height: 56px;
+   width: 100%;
+   margin-top: 28px;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   color: #fff;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 21px;
+   font-family: Montserrat;
+}
+.main-cards__hearts {
+   background: #7e72f2;
+   -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+   border: 0;
+   border-radius: 8px;
+   width: 45px;
+   height: 40px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+}
+.card__rating {
+   width: 65px;
+   border-radius: 3px;
+   padding: 7px 10px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: row;
+   flex-direction: row;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+}
+.card__rating span {
+   font-size: 14px;
+}
+.card__wishlists {
+   width: 50%;
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 18x;
+   padding: 12px;
+   background: #f9f9f9;
+   display: -webkit-inline-box;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   border-radius: 0px 0px 0px 8px;
+   color: #2c2c2c;
+}
+.card__wishlists svg {
+   padding-right: 10px;
+}
+.card__cart {
+   width: 50%;
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 18x;
+   padding: 12px;
+   display: -webkit-inline-box;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   border-radius: 0px 0px 8px 0px;
+}
+.card__cart svg {
+   padding-right: 10px;
+}
+header h1 {
+   margin-left: 22px;
+   color: #7e72f2;
+}
+header img {
+   height: 72px;
+}
+.nav__breadcrumb {
+   padding: 1px 1px;
+   list-style: none;
+}
+.nav__breadcrumb li {
+   display: inline;
+   font-size: 14px;
+   line-height: 17px;
+}
+.nav__breadcrumb li + li:before {
+   padding: 8px;
+   color: #000;
+   content: ">>";
+}
+.nav__breadcrumb li a {
+   color: #7e72f2;
+   text-decoration: none;
+}
+.nav__breadcrumb li a:hover {
+   color: #7e72f2;
+   text-decoration: underline;
+}
+.aside__header {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+.aside__header h5 {
+   font-weight: normal;
+   font-size: 18px;
+}
+.aside__characteristic {
+   background-color: #fff;
+   padding: 19px 45px;
+   -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+   border: 0;
+   border-radius: 8px;
+   height: 86.5%;
+}
+.aside__characteristic h4 {
+   margin: 0 0 21px 0;
+   padding: 0;
+}
+.aside__category-element {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+}
+.main-cards__header {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+.main-cards__header h5 {
+   font-weight: normal;
+   font-size: 18px;
+}
+.main-cards__search input[type="text"] {
+   margin-top: 2px;
+   width: 100%;
+   background: #fff;
+   -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+   border-radius: 8px;
+   border: 0;
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 22px;
+   line-height: 26px;
+   height: 62px;
+}
+.main-cards__search input[type="text"]::-webkit-input-placeholder {
+   padding-left: 32px;
+}
+.main-cards__search input[type="text"]::-moz-placeholder {
+   padding-left: 32px;
+}
+.main-cards__search input[type="text"]:-ms-input-placeholder {
+   padding-left: 32px;
+}
+.main-cards__search input[type="text"]::-ms-input-placeholder {
+   padding-left: 32px;
+}
+.main-cards__search input[type="text"]::placeholder {
+   padding-left: 32px;
+}
+.main-cards__container {
+   width: 100%;
+   display: -webkit-inline-box;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+   padding-top: 30px;
+}
+.main-cards__container .card {
+   background: #fff;
+   -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+   border-radius: 8px;
+   height: 486px;
+   font-style: normal;
+}
+.main-cards__container .card__img {
+   height: 277px;
+   padding: 30px;
+}
+.main-cards__container .card__img img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+   position: absolute;
+   margin: auto;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   right: 0;
+}
+.main-cards__container .card__img-padding {
+   height: 277px;
+   position: relative;
+}
+.main-cards__container .card__header {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+   margin: 0 20px 0 20px;
+}
+.main-cards__container .card__header__price {
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 21px;
+}
+.main-cards__container .card__text {
+   padding: 16px 24px 22px 24px;
+}
+.main-cards__container .card__text h3 {
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 19px;
+   color: #2c2c2c;
+   padding-bottom: 1px;
+   margin: 0;
+   height: 38px;
+   overflow: hidden;
+}
+.main-cards__container .card__text span {
+   font-style: normal;
+   font-weight: 300;
+   font-size: 12px;
+   line-height: 14px;
+   color: #2c2c2c;
+   padding-top: 0;
+   margin-top: 0;
+}
+.main-cards__container .card__footer {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 2400px) and (-webkit-min-device-pixel-ratio: 1) {
+   .aside {
+      width: 400px;
+   }
+   .card-background {
+      width: 33.33%;
+   }
+   .main-cards {
+      width: 70%;
+   }
+   .main-cards__search {
+      margin-right: 30px;
+   }
+   .cards-header {
+      padding-right: 30px;
+   }
+   .card {
+      margin: 0 30px 40px 0;
+   }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 1) {
+   .aside {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+   }
+   .aside__header {
+      padding: 0 5px 0 5px;
+   }
+   .card-background {
+      width: 50%;
+   }
+   .main-cards {
+      width: 100%;
+   }
+   .main-cards__search {
+      margin: 10px;
+   }
+   .card {
+      margin: 0 10px 15px 10px;
+   }
+}
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+   .aside {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+   }
+   .aside__aside-header {
+      padding: 0 2px 0 2px;
+   }
+   .card-background {
+      width: 100%;
+   }
+   .main-cards {
+      width: 100%;
+   }
+   .main-cards__search {
+      margin: 10px;
+   }
+   .card {
+      margin: 0 10px 15px 10px;
+   }
+}
+/*# sourceMappingURL=style.css.map */
